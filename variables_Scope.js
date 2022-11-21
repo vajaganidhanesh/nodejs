@@ -31,7 +31,7 @@ console.log(age);
 // asigning function to a variable is also known as arrow function which decreases code and
 // 
 let sum = function(a , b){
-    console.log(a+b);
+    // console.log(a+b);
     multiplication("calling from sum function");
 }
 
@@ -47,3 +47,10 @@ const student = {
 
 let copyObject  = {...student,name :"vajagani"}
 console.log(copyObject);
+let a =10,b=20;
+function closures(){
+    let ans = a+b;
+    console.log(ans);
+}
+
+closures()

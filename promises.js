@@ -47,7 +47,7 @@ function toGetData(url)
 
 toGetData('data.json')
 .then((data)=>{
-    console.log('json data');
+
     console.log(data);
     data.map((value,index)=>{
         
