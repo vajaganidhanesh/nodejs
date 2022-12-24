@@ -20,13 +20,13 @@ function nameFunction(hometown,state){
 
 // function borrowing using ---callFunction()----
 // The call() method calls the function with a given this
-//  value and allows passing in arguments one by one separating them with commas:
+// :
 
 nameFunction.call(names,"chittoor","AndhraPradesh")
 
 // function borrowing using ---applyFunction()----
 // The apply() method calls the function with a given this value and allows
-//  passing in arguments as an array (or an array-like object).
+//  passing values in arguments as an array (or an array-like object).
 
 names.thunder.apply(names1,['nallangadu'])
 
