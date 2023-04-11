@@ -1,53 +1,27 @@
-let name2 = {
-    firstname :"vajagani",
-    secondname :"dhanesh",
-    combination :function(){
-        console.log(this.firstname,"",this.secondname);
-    }
-}
+// let student = {
+//   name: "dhanesh",
+//   age: 23,
+// };
 
-function fullName(town,state){
-    console.log(this.firstname,this.secondname,"from",town,state);
-}
-// name2.combination()
+// function callMethod(data) {
+//   console.log(this.name, this.age, data);
+// }
 
+// callMethod.call(student, "UI-developer");
 
-let name1 = {
-    firstname :"javascrip",
-    secondname :"node js"
-}
+// callMethod.apply(student, ["frontend developer"]);
 
-// fullName.call(name2,"chittoor","andhra")
-// fullName.apply(name1,["programming","client-side"])
+// let callDataMethod = callMethod.bind(student, "mern stack");
+// callDataMethod();
 
-let fullnameBind = fullName.bind(name1,'programming','server-side');
-// fullnameBind();
+var array = [
+  ["a", "b", "c"],
+  ["a", "b", "c"],
+  ["a", "b", "c"],
+];
 
-// let string = 'dhanesh'
-// string[0]='D'
-// console.log(string);
+var x = array.map(function (val) {
+  return val.splice(1, 1);
+});
 
-
-let arr1 = [1,2,3];
-let arr2 = arr1;
-
-console.log(arr1===arr2);
-
-let obj = {
-    name:'dhanesh',
-    age:'24'
-}
-let obj2 = obj
-console.log(obj === obj2);
-
-const user = async () =>{
-    const response = await fetch('./data.json')
-    const data = await response.json();
-    console.log(data);
-    data.map((data,index)=>{
-        let p = document.createElement('p');
-        p.append(data.title)
-        document.getElementById('demo').appendChild(p)
-    })
-}
-user()
+console.log(array);

@@ -13,3 +13,13 @@ let students = {
 }
 
 console.log(students);
+
+// function demo(){
+//     return Promise.resolve(1);
+// }
+
+async function demo(){
+    return 1;
+}
+
+console.log(demo());
