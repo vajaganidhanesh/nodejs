@@ -1,27 +1,15 @@
-// let student = {
-//   name: "dhanesh",
-//   age: 23,
-// };
-
-// function callMethod(data) {
-//   console.log(this.name, this.age, data);
-// }
-
-// callMethod.call(student, "UI-developer");
-
-// callMethod.apply(student, ["frontend developer"]);
-
-// let callDataMethod = callMethod.bind(student, "mern stack");
-// callDataMethod();
-
-var array = [
-  ["a", "b", "c"],
-  ["a", "b", "c"],
-  ["a", "b", "c"],
-];
-
-var x = array.map(function (val) {
-  return val.splice(1, 1);
-});
-
-console.log(array);
+let obj = {
+  student: "dhanesh",
+  age: 23,
+  details: function (village, dist) {
+    console.log(this.student, this.age, village, dist);
+  },
+};
+let std = {
+  student: "vajagani",
+  age: 22,
+};
+obj.details.call(std, "ngd", "chittoor");
+obj.details.apply(std, ["bpm", "chittoor"]);
+const data = obj.details.bind(std, "dfdsf", "dasdf");
+data();
